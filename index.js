@@ -4,7 +4,7 @@ const app = express();
 const port = 419;
 
 app.use(express.json());
-app.use("/api/v1/users", userRoute)
+app.use("/api/v1/users", userRoute);
 
 app.get("/", (req, res) => {
   res.send("hello welcome to my personal api server");
